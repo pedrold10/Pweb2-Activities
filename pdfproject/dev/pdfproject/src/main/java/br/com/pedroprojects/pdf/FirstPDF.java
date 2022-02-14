@@ -2,6 +2,7 @@ package com.itext.test;
 
 import java.io.FileOutputStream;
 
+import com.lowagie.text.Anchor;
 import com.lowagie.text.BadElementException;
 import com.lowagie.text.Chapter;
 import com.lowagie.text.Document;
