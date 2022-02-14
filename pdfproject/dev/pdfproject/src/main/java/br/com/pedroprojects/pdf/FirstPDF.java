@@ -16,8 +16,9 @@ import com.lowagie.text.Section;
 import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfWriter;
-public class FirstPdf {
-	  private static String FILE = "D:/FirstPdf.pdf";
+
+public class FirstPDF {
+	  private static String FILE = "C:/FirstPDF.pdf";
 	  private static Font catFont = new Font(
 	      Font.BOLD);
 	  private static Font redFont = new Font(
