@@ -1,32 +1,31 @@
-package br.com.pedroprojects;
+package br.com.pedroprojects.pdf;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Anchor;
-import com.lowagie.text.BadElementException;
-import com.lowagie.text.Chapter;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.Font;
-import com.lowagie.text.List;
-import com.lowagie.text.ListItem;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Section;
-import com.lowagie.text.pdf.PdfPCell;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfWriter;
+import com.itextpdf.text.BadElementException;
+import com.itextpdf.text.Chapter;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.List;
+import com.itextpdf.text.ListItem;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.Section;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
 
 public class FirstPDF {
 	  private static String FILE = "C:/FirstPDF.pdf";
-	  private static Font catFont = new Font(
+	  private static Font catFont = new Font(Font.FontFamily.TIMES_ROMAN, 18, 
 	      Font.BOLD);
-	  private static Font redFont = new Font(
+	  private static Font redFont = new Font(Font.FontFamily.TIMES_ROMAN, 12, 
 	      Font.NORMAL);
-	  private static Font subFont = new Font(
+	  private static Font subFont = new Font(Font.FontFamily.TIMES_ROMAN, 16, 
 	      Font.BOLD);
-	  private static Font smallBold = new Font(
+	  private static Font smallBold = new Font(Font.FontFamily.TIMES_ROMAN, 12, 
 	      Font.BOLD);
 
 	  public static void main(String[] args) {
