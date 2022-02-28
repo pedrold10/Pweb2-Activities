@@ -31,11 +31,12 @@ public class GeneratePdfController {
             document.open();
             Font titleFont = FontFactory.getFont(FontFactory.HELVETICA, 16, Font.BOLDITALIC);
             Font paragraphFont = FontFactory.getFont(FontFactory.HELVETICA, 12, Font.NORMAL);
-            Chunk chunk = new Chunk("Título do Parágrafo", titleFont);
+            Chunk chunk = new Chunk("Olá", titleFont);
             Chapter chapter = new Chapter(new Paragraph(chunk), 1);
             chapter.setNumberDepth(0);
-            chapter.add(new Paragraph("Texto do parágrafo... ", paragraphFont));
-            document.add(chapter);document.close();
+            chapter.add(new Paragraph("Um texto qualquer ", paragraphFont));
+            document.add(chapter);
+            document.close();
             // Começa a gerar a resposta HTTP para um tipo de arquivo diferente de HTML
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_PDF);
